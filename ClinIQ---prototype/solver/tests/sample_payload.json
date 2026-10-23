@@ -1,0 +1,1723 @@
+{
+ "doctors": [
+  {
+   "id": "doc_sven",
+   "name": "Sven Svensson",
+   "role": "Specialist",
+   "competence": [
+    "Mottagning",
+    "Jour",
+    "SÄBO"
+   ],
+   "accumulatedFatigue": 20,
+   "daysSinceLastJour": 5,
+   "contractPercentage": 100,
+   "fte": 100,
+   "baseSchedule": [
+    {
+     "dayIndex": 1,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 2,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 3,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 4,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 5,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 6,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    },
+    {
+     "dayIndex": 0,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    }
+   ],
+   "workingHoursDescription": "08:00 - 17:00",
+   "defaultEndTime": "17:00",
+   "preferences": []
+  },
+  {
+   "id": "doc_franzi",
+   "name": "Fredrik Eriksson",
+   "role": "Specialist",
+   "competence": [
+    "Mottagning",
+    "BVC"
+   ],
+   "accumulatedFatigue": 15,
+   "daysSinceLastJour": 10,
+   "contractPercentage": 100,
+   "fte": 100,
+   "baseSchedule": [
+    {
+     "dayIndex": 1,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 2,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 3,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 4,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 5,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 6,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    },
+    {
+     "dayIndex": 0,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    }
+   ],
+   "workingHoursDescription": "08:00 - 17:00",
+   "defaultEndTime": "17:00",
+   "preferences": []
+  },
+  {
+   "id": "spec_1",
+   "name": "Anna Andersson",
+   "role": "Specialist",
+   "competence": [
+    "Mottagning",
+    "Jour",
+    "Admin",
+    "BVC",
+    "SÄBO",
+    "Möte"
+   ],
+   "accumulatedFatigue": 46,
+   "daysSinceLastJour": 1,
+   "contractPercentage": 100,
+   "fte": 100,
+   "baseSchedule": [
+    {
+     "dayIndex": 1,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 2,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 3,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 4,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 5,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 6,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    },
+    {
+     "dayIndex": 0,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    }
+   ],
+   "workingHoursDescription": "08:00 - 16:30",
+   "defaultEndTime": "16:30",
+   "preferences": [
+    "Gillar admin på fredagar"
+   ]
+  },
+  {
+   "id": "spec_2",
+   "name": "Erik Johansson",
+   "role": "Specialist",
+   "competence": [
+    "Mottagning",
+    "Jour",
+    "Admin",
+    "BVC",
+    "SÄBO",
+    "Möte"
+   ],
+   "accumulatedFatigue": 45,
+   "daysSinceLastJour": 7,
+   "contractPercentage": 100,
+   "fte": 100,
+   "baseSchedule": [
+    {
+     "dayIndex": 1,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 2,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 3,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 4,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 5,
+     "start": "08:00",
+     "end": "12:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 6,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    },
+    {
+     "dayIndex": 0,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    }
+   ],
+   "workingHoursDescription": "08:00 - 16:30",
+   "defaultEndTime": "16:30",
+   "preferences": [
+    "Gillar admin på fredagar"
+   ]
+  },
+  {
+   "id": "spec_3",
+   "name": "Maria Karlsson",
+   "role": "Specialist",
+   "competence": [
+    "Mottagning",
+    "Jour",
+    "Admin",
+    "BVC",
+    "SÄBO",
+    "Möte"
+   ],
+   "accumulatedFatigue": 32,
+   "daysSinceLastJour": 7,
+   "contractPercentage": 100,
+   "fte": 100,
+   "baseSchedule": [
+    {
+     "dayIndex": 1,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 2,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 3,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 4,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 5,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 6,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    },
+    {
+     "dayIndex": 0,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    }
+   ],
+   "workingHoursDescription": "08:00 - 17:00",
+   "defaultEndTime": "17:00",
+   "preferences": [
+    "Gillar admin på fredagar"
+   ]
+  },
+  {
+   "id": "spec_4",
+   "name": "Lars Nilsson",
+   "role": "Specialist",
+   "competence": [
+    "Mottagning",
+    "Jour",
+    "Admin",
+    "BVC",
+    "SÄBO",
+    "Möte"
+   ],
+   "accumulatedFatigue": 50,
+   "daysSinceLastJour": 1,
+   "contractPercentage": 100,
+   "fte": 100,
+   "baseSchedule": [
+    {
+     "dayIndex": 1,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 2,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 3,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 4,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 5,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 6,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    },
+    {
+     "dayIndex": 0,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    }
+   ],
+   "workingHoursDescription": "08:00 - 17:00",
+   "defaultEndTime": "17:00",
+   "preferences": [
+    "Gillar admin på fredagar"
+   ]
+  },
+  {
+   "id": "spec_5",
+   "name": "Karin Eriksson",
+   "role": "Specialist",
+   "competence": [
+    "Mottagning",
+    "Jour",
+    "Admin",
+    "BVC",
+    "SÄBO",
+    "Möte"
+   ],
+   "accumulatedFatigue": 10,
+   "daysSinceLastJour": 3,
+   "contractPercentage": 100,
+   "fte": 100,
+   "baseSchedule": [
+    {
+     "dayIndex": 1,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 2,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 3,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 4,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 5,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 6,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    },
+    {
+     "dayIndex": 0,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    }
+   ],
+   "workingHoursDescription": "08:00 - 16:30",
+   "defaultEndTime": "16:30",
+   "preferences": [
+    "Gillar admin på fredagar"
+   ]
+  },
+  {
+   "id": "spec_6",
+   "name": "Johan Larsson",
+   "role": "Specialist",
+   "competence": [
+    "Mottagning",
+    "Jour",
+    "Admin",
+    "BVC",
+    "SÄBO",
+    "Möte"
+   ],
+   "accumulatedFatigue": 35,
+   "daysSinceLastJour": 2,
+   "contractPercentage": 100,
+   "fte": 100,
+   "baseSchedule": [
+    {
+     "dayIndex": 1,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 2,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 3,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 4,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 5,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 6,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    },
+    {
+     "dayIndex": 0,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    }
+   ],
+   "workingHoursDescription": "08:00 - 17:00",
+   "defaultEndTime": "17:00",
+   "preferences": [
+    "Gillar admin på fredagar"
+   ]
+  },
+  {
+   "id": "spec_7",
+   "name": "Sara Olsson",
+   "role": "Specialist",
+   "competence": [
+    "Mottagning",
+    "Jour",
+    "Admin",
+    "BVC",
+    "SÄBO",
+    "Möte"
+   ],
+   "accumulatedFatigue": 38,
+   "daysSinceLastJour": 3,
+   "contractPercentage": 100,
+   "fte": 100,
+   "baseSchedule": [
+    {
+     "dayIndex": 1,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 2,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 3,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 4,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 5,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 6,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    },
+    {
+     "dayIndex": 0,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    }
+   ],
+   "workingHoursDescription": "08:00 - 17:00",
+   "defaultEndTime": "17:00",
+   "preferences": [
+    "Gillar admin på fredagar"
+   ]
+  },
+  {
+   "id": "st_1",
+   "name": "Per Persson",
+   "role": "ST-läkare",
+   "competence": [
+    "Mottagning",
+    "Jour",
+    "Studier/Utb",
+    "BVC"
+   ],
+   "accumulatedFatigue": 38,
+   "daysSinceLastJour": 1,
+   "contractPercentage": 100,
+   "fte": 100,
+   "baseSchedule": [
+    {
+     "dayIndex": 1,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 2,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 3,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 4,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 5,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 6,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    },
+    {
+     "dayIndex": 0,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    }
+   ],
+   "workingHoursDescription": "08:00 - 17:00",
+   "defaultEndTime": "17:00",
+   "preferences": [
+    "Önskar studietid tisdagar"
+   ]
+  },
+  {
+   "id": "st_2",
+   "name": "Kristina Svensson",
+   "role": "ST-läkare",
+   "competence": [
+    "Mottagning",
+    "Jour",
+    "Studier/Utb",
+    "BVC"
+   ],
+   "accumulatedFatigue": 45,
+   "daysSinceLastJour": 5,
+   "contractPercentage": 100,
+   "fte": 100,
+   "baseSchedule": [
+    {
+     "dayIndex": 1,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 2,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 3,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 4,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 5,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 6,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    },
+    {
+     "dayIndex": 0,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    }
+   ],
+   "workingHoursDescription": "08:00 - 17:00",
+   "defaultEndTime": "17:00",
+   "preferences": [
+    "Önskar studietid tisdagar"
+   ]
+  },
+  {
+   "id": "st_3",
+   "name": "Anders Gustafsson",
+   "role": "ST-läkare",
+   "competence": [
+    "Mottagning",
+    "Jour",
+    "Studier/Utb",
+    "BVC"
+   ],
+   "accumulatedFatigue": 47,
+   "daysSinceLastJour": 8,
+   "contractPercentage": 100,
+   "fte": 100,
+   "baseSchedule": [
+    {
+     "dayIndex": 1,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 2,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 3,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 4,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 5,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 6,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    },
+    {
+     "dayIndex": 0,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    }
+   ],
+   "workingHoursDescription": "08:00 - 17:00",
+   "defaultEndTime": "17:00",
+   "preferences": [
+    "Önskar studietid tisdagar"
+   ]
+  },
+  {
+   "id": "st_4",
+   "name": "Lena Andersson",
+   "role": "ST-läkare",
+   "competence": [
+    "Mottagning",
+    "Jour",
+    "Studier/Utb",
+    "BVC"
+   ],
+   "accumulatedFatigue": 34,
+   "daysSinceLastJour": 2,
+   "contractPercentage": 100,
+   "fte": 100,
+   "baseSchedule": [
+    {
+     "dayIndex": 1,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 2,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 3,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 4,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 5,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 6,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    },
+    {
+     "dayIndex": 0,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    }
+   ],
+   "workingHoursDescription": "08:00 - 17:00",
+   "defaultEndTime": "17:00",
+   "preferences": [
+    "Önskar studietid tisdagar"
+   ]
+  },
+  {
+   "id": "at_1",
+   "name": "Mikael Johansson",
+   "role": "AT-läkare",
+   "competence": [
+    "Mottagning",
+    "Studier/Utb",
+    "Admin"
+   ],
+   "accumulatedFatigue": 7,
+   "daysSinceLastJour": 99,
+   "contractPercentage": 100,
+   "fte": 100,
+   "baseSchedule": [
+    {
+     "dayIndex": 1,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 2,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 3,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 4,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 5,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 6,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    },
+    {
+     "dayIndex": 0,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    }
+   ],
+   "workingHoursDescription": "08:00 - 16:30",
+   "defaultEndTime": "16:30",
+   "preferences": []
+  },
+  {
+   "id": "at_2",
+   "name": "Emma Karlsson",
+   "role": "AT-läkare",
+   "competence": [
+    "Mottagning",
+    "Studier/Utb",
+    "Admin"
+   ],
+   "accumulatedFatigue": 7,
+   "daysSinceLastJour": 99,
+   "contractPercentage": 100,
+   "fte": 100,
+   "baseSchedule": [
+    {
+     "dayIndex": 1,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 2,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 3,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 4,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 5,
+     "start": "08:00",
+     "end": "17:00",
+     "isOff": false
+    },
+    {
+     "dayIndex": 6,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    },
+    {
+     "dayIndex": 0,
+     "start": "00:00",
+     "end": "00:00",
+     "isOff": true
+    }
+   ],
+   "workingHoursDescription": "08:00 - 16:30",
+   "defaultEndTime": "16:30",
+   "preferences": []
+  }
+ ],
+ "requirements": [
+  {
+   "date": "2026-10-26",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-10-27",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-10-28",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-10-29",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-10-30",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-10-31",
+   "minStaff": 2,
+   "requiredShifts": {
+    "Jour": 2
+   }
+  },
+  {
+   "date": "2026-11-01",
+   "minStaff": 2,
+   "requiredShifts": {
+    "Jour": 2
+   }
+  },
+  {
+   "date": "2026-11-02",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-03",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-04",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-05",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-06",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-07",
+   "minStaff": 2,
+   "requiredShifts": {
+    "Jour": 2
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "minStaff": 2,
+   "requiredShifts": {
+    "Jour": 2
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-10",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-14",
+   "minStaff": 2,
+   "requiredShifts": {
+    "Jour": 2
+   }
+  },
+  {
+   "date": "2026-11-15",
+   "minStaff": 2,
+   "requiredShifts": {
+    "Jour": 2
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-21",
+   "minStaff": 2,
+   "requiredShifts": {
+    "Jour": 2
+   }
+  },
+  {
+   "date": "2026-11-22",
+   "minStaff": 2,
+   "requiredShifts": {
+    "Jour": 2
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-25",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-26",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-27",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-11-28",
+   "minStaff": 2,
+   "requiredShifts": {
+    "Jour": 2
+   }
+  },
+  {
+   "date": "2026-11-29",
+   "minStaff": 2,
+   "requiredShifts": {
+    "Jour": 2
+   }
+  },
+  {
+   "date": "2026-11-30",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-01",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-02",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-03",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-04",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-05",
+   "minStaff": 2,
+   "requiredShifts": {
+    "Jour": 2
+   }
+  },
+  {
+   "date": "2026-12-06",
+   "minStaff": 2,
+   "requiredShifts": {
+    "Jour": 2
+   }
+  },
+  {
+   "date": "2026-12-07",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-08",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-09",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-10",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-11",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-12",
+   "minStaff": 2,
+   "requiredShifts": {
+    "Jour": 2
+   }
+  },
+  {
+   "date": "2026-12-13",
+   "minStaff": 2,
+   "requiredShifts": {
+    "Jour": 2
+   }
+  },
+  {
+   "date": "2026-12-14",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-15",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-16",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-17",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-18",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-19",
+   "minStaff": 2,
+   "requiredShifts": {
+    "Jour": 2
+   }
+  },
+  {
+   "date": "2026-12-20",
+   "minStaff": 2,
+   "requiredShifts": {
+    "Jour": 2
+   }
+  },
+  {
+   "date": "2026-12-21",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-22",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-23",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  },
+  {
+   "date": "2026-12-24",
+   "minStaff": 8,
+   "requiredShifts": {
+    "Jour": 2,
+    "BVC": 1,
+    "SÄBO": 1,
+    "Admin": 3,
+    "Mottagning": 6
+   }
+  }
+ ],
+ "leaves": [
+  {
+   "id": "l1",
+   "doctorId": "spec_1",
+   "date": "2026-10-28",
+   "status": "APPROVED",
+   "reason": "Semester",
+   "isFullDay": true
+  },
+  {
+   "id": "l2",
+   "doctorId": "spec_2",
+   "date": "2026-10-29",
+   "status": "APPROVED",
+   "reason": "Tandläkare",
+   "isFullDay": false,
+   "startTime": "08:00",
+   "endTime": "12:00"
+  },
+  {
+   "id": "l3",
+   "doctorId": "spec_3",
+   "date": "2026-10-31",
+   "status": "APPROVED",
+   "reason": "Helg",
+   "isFullDay": true
+  },
+  {
+   "id": "l4",
+   "doctorId": "spec_4",
+   "date": "2026-11-02",
+   "status": "APPROVED",
+   "reason": "Ägarmöte-dagen",
+   "isFullDay": true
+  },
+  {
+   "id": "l5",
+   "doctorId": "spec_5",
+   "date": "2026-11-03",
+   "status": "PENDING",
+   "reason": "Ej godkänd - ska ignoreras",
+   "isFullDay": true
+  }
+ ],
+ "config": {
+  "base": {
+   "maxDoctors": 12,
+   "minTotalDaily": 6,
+   "minSpecDaily": 3,
+   "minTotalLate": 2,
+   "minSpecLate": 1
+  },
+  "ownerMeeting": {
+   "isActive": true,
+   "name": "Ägarmöte",
+   "requiredRole": "Specialist",
+   "requiredCount": 6,
+   "months": [
+    0,
+    2,
+    4,
+    8,
+    10
+   ],
+   "dayOfWeek": 1,
+   "weekCriteria": "FIRST_WEEK_OF_MONTH",
+   "timeStart": "09:30",
+   "timeEnd": "12:30",
+   "notes": "Kräver 6 specialister. Låst tid."
+  },
+  "recurringTasks": [
+   {
+    "id": "bvc_tues",
+    "name": "BVC Mottagning (Tis)",
+    "days": [
+     "Tisdag"
+    ],
+    "assignedDoctorId": "doc_franzi",
+    "backup1DoctorId": "spec_2",
+    "backup2DoctorId": "UNASSIGNED"
+   },
+   {
+    "id": "bvc_thurs",
+    "name": "BVC Mottagning (Tor)",
+    "days": [
+     "Torsdag"
+    ],
+    "assignedDoctorId": "spec_3",
+    "backup1DoctorId": "spec_2",
+    "backup2DoctorId": "UNASSIGNED"
+   },
+   {
+    "id": "sabo_vallon_tues",
+    "name": "Vallon (SÄBO) Tis",
+    "days": [
+     "Tisdag"
+    ],
+    "assignedDoctorId": "UNASSIGNED",
+    "backup1DoctorId": "UNASSIGNED",
+    "backup2DoctorId": "UNASSIGNED"
+   },
+   {
+    "id": "sabo_vallon_thurs",
+    "name": "Vallon (SÄBO) Tor",
+    "days": [
+     "Torsdag"
+    ],
+    "assignedDoctorId": "spec_4",
+    "backup1DoctorId": "UNASSIGNED",
+    "backup2DoctorId": "UNASSIGNED"
+   },
+   {
+    "id": "sabo_attendo",
+    "name": "Attendo (SÄBO)",
+    "days": [
+     "Onsdag"
+    ],
+    "assignedDoctorId": "doc_sven",
+    "backup1DoctorId": "spec_1",
+    "backup2DoctorId": "CANCEL"
+   },
+   {
+    "id": "muren_sabo",
+    "name": "Murén Rond (SÄBO)",
+    "days": [
+     "Onsdag"
+    ],
+    "assignedDoctorId": "spec_2",
+    "backup1DoctorId": "UNASSIGNED",
+    "backup2DoctorId": "UNASSIGNED",
+    "notes": "Rondtid, får ej flyttas."
+   },
+   {
+    "id": "ortoped_mott",
+    "name": "OM (Ortopedmottagning)",
+    "days": [
+     "Torsdag"
+    ],
+    "assignedDoctorId": "spec_1",
+    "backup1DoctorId": "UNASSIGNED",
+    "backup2DoctorId": "UNASSIGNED",
+    "notes": "Endast Torsdag FM"
+   }
+  ],
+  "deviations": [
+   {
+    "id": "xmas_week",
+    "name": "Julveckan (v52)",
+    "startDate": "2024-12-23",
+    "endDate": "2024-12-29",
+    "counts": {
+     "maxDoctors": 6,
+     "minTotalDaily": 3,
+     "minSpecDaily": 1,
+     "minTotalLate": 1,
+     "minSpecLate": 0
+    }
+   }
+  ]
+ }
+}

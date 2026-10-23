@@ -1,0 +1,193 @@
+// ClinIQ - Prisma schema
+// Modeled directly on the frontend's types.ts so the two stay easy to compare.
+// Run `npx prisma migrate dev --name init` after setting DATABASE_URL to create these tables.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// --- ENUMS (mirror types.ts) ---
+
+enum DoctorRole {
+  SPECIALIST
+  ST
+  AT
+}
+
+enum UserRole {
+  ADMIN
+  DOCTOR
+}
+
+enum ShiftType {
+  MOTTAGNING
+  JOUR
+  ADMIN
+  BVC
+  SABO
+  OM
+  STUDIES
+  LEDIG
+  SAKNAS
+  MEETING
+}
+
+enum Period {
+  FM
+  EM
+}
+
+enum LeaveStatus {
+  PENDING
+  APPROVED
+  DENIED
+}
+
+// --- CORE MODELS ---
+
+model User {
+  id        String    @id @default(cuid())
+  name      String
+  role      UserRole
+  doctorId  String?   @unique
+  doctor    Doctor?   @relation(fields: [doctorId], references: [id])
+  createdAt DateTime  @default(now())
+}
+
+model Doctor {
+  id                      String     @id @default(cuid())
+  name                    String
+  role                    DoctorRole
+  competence              ShiftType[]
+  // WorkDayConfig[] ({ dayIndex, start, end, isOff }) - kept as JSON since it's
+  // always read/written as one whole array from the UI, never queried per-day.
+  baseSchedule            Json
+  fte                     Int
+  accumulatedFatigue      Float      @default(0)
+  daysSinceLastJour       Int        @default(14)
+  contractPercentage      Int
+  workingHoursDescription String
+  defaultEndTime          String
+  preferences             String[]
+  createdAt               DateTime   @default(now())
+  updatedAt               DateTime   @updatedAt
+
+  user               User?
+  leaveRequests      LeaveRequest[]
+  assignments        ScheduleAssignment[]
+  primaryTasks       RecurringTask[]      @relation("PrimaryDoctor")
+  backup1Tasks       RecurringTask[]      @relation("Backup1Doctor")
+  backup2Tasks       RecurringTask[]      @relation("Backup2Doctor")
+}
+
+model LeaveRequest {
+  id                    String       @id @default(cuid())
+  doctorId              String
+  doctor                Doctor       @relation(fields: [doctorId], references: [id], onDelete: Cascade)
+  date                  DateTime     @db.Date
+  status                LeaveStatus  @default(PENDING)
+  reason                String
+  isFullDay             Boolean      @default(true)
+  startTime             String?
+  endTime               String?
+  aiRecommendation      LeaveStatus?
+  aiReasoning           String?
+  suggestedAlternatives String[]
+  createdAt             DateTime     @default(now())
+
+  @@index([doctorId, date])
+}
+
+model ScheduleAssignment {
+  id               String    @id @default(cuid())
+  date             DateTime  @db.Date
+  period           Period
+  shift            ShiftType
+  // Nullable: mirrors the "N/A" sentinel used when no doctor could be found (SAKNAS)
+  assignedDoctorId String?
+  doctor           Doctor?   @relation(fields: [assignedDoctorId], references: [id], onDelete: SetNull)
+  aiExplanation    String
+  scoreSnapshot    Float
+  isManual         Boolean   @default(false)
+  taskName         String?
+  createdAt        DateTime  @default(now())
+
+  @@index([date])
+  @@index([assignedDoctorId, date])
+}
+
+model DailyRequirement {
+  id             String   @id @default(cuid())
+  date           DateTime @unique @db.Date
+  minStaff       Int
+  // { [ShiftType]: number }, e.g. { "JOUR": 2, "MOTTAGNING": 6 }
+  requiredShifts Json
+}
+
+// Singleton row (always fetched by a fixed id) holding the base staffing rules.
+model StaffingConfig {
+  id String @id @default("singleton")
+
+  maxDoctors    Int
+  minTotalDaily Int
+  minSpecDaily  Int
+  minTotalLate  Int
+  minSpecLate   Int
+
+  ownerMeetingIsActive      Boolean
+  ownerMeetingName          String
+  ownerMeetingRequiredRole  DoctorRole
+  ownerMeetingRequiredCount Int
+  ownerMeetingMonths        Int[]
+  ownerMeetingDayOfWeek     Int
+  ownerMeetingTimeStart     String
+  ownerMeetingTimeEnd       String
+  ownerMeetingNotes         String
+
+  recurringTasks RecurringTask[]
+  deviations     StaffingDeviation[]
+  updatedAt      DateTime            @updatedAt
+}
+
+model RecurringTask {
+  id    String   @id @default(cuid())
+  name  String
+  days  String[]
+  notes String?
+
+  // Null = "UNASSIGNED" i den gamla frontend-modellen.
+  assignedDoctorId String?
+  assignedDoctor   Doctor? @relation("PrimaryDoctor", fields: [assignedDoctorId], references: [id], onDelete: SetNull)
+
+  backup1DoctorId String?
+  backup1Doctor   Doctor? @relation("Backup1Doctor", fields: [backup1DoctorId], references: [id], onDelete: SetNull)
+  backup1Cancel   Boolean @default(false) // ersätter den gamla "CANCEL"-strängen
+
+  backup2DoctorId String?
+  backup2Doctor   Doctor? @relation("Backup2Doctor", fields: [backup2DoctorId], references: [id], onDelete: SetNull)
+  backup2Cancel   Boolean @default(false)
+
+  staffingConfigId String
+  staffingConfig   StaffingConfig @relation(fields: [staffingConfigId], references: [id], onDelete: Cascade)
+}
+
+model StaffingDeviation {
+  id        String   @id @default(cuid())
+  name      String
+  startDate DateTime @db.Date
+  endDate   DateTime @db.Date
+
+  maxDoctors    Int
+  minTotalDaily Int
+  minSpecDaily  Int
+  minTotalLate  Int
+  minSpecLate   Int
+
+  staffingConfigId String
+  staffingConfig   StaffingConfig @relation(fields: [staffingConfigId], references: [id], onDelete: Cascade)
+}

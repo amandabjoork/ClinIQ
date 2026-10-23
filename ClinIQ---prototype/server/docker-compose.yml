@@ -1,0 +1,26 @@
+# Valfritt: kör en lokal Postgres istället för ett gratis Neon-konto.
+# Startas med: docker compose up -d
+version: "3.8"
+services:
+  postgres:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: cliniq
+      POSTGRES_PASSWORD: cliniq
+      POSTGRES_DB: cliniq
+    ports:
+      - "5432:5432"
+    volumes:
+      - cliniq_pgdata:/var/lib/postgresql/data
+
+  # Valfritt: OR-Tools-solvern. Startas med: docker compose --profile solver up -d --build
+  solver:
+    profiles: ["solver"]
+    build: ../solver
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+
+volumes:
+  cliniq_pgdata:

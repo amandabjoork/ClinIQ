@@ -1,0 +1,5 @@
+{
+  "name": "ClinIQ - Prototyp",
+  "description": "An AI-powered scheduling prototype for primary care physicians, demonstrating fair distribution of shifts and intelligent leave management.",
+  "requestFramePermissions": []
+}
